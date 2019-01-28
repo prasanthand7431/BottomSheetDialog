@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".MainActivity">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       app:cardBackgroundColor="@color/cardbackgroundcolor"
+       app:cardElevation="10dp">
+
+       <LinearLayout
+           android:layout_margin="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="Card Title"
+               android:textColor="#fff"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="In today’s age of busy schedules and omnipresent technology, we have given in and let our children be entertained by the internet. However, there is nothing like spending a little quality time with your little one with some stories and imparting some wisdom along the way. "
+               android:textColor="#fff"/>
+
+           <ImageView
+               android:id="@+id/shareimage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_share_black_24dp"
+               android:layout_marginTop="5dp"
+               android:layout_gravity="end"/>
+
+
+       </LinearLayout>
+
+   </android.support.v7.widget.CardView>
+
+    
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+    <include layout="@layout/bottomsheet"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
